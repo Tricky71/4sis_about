@@ -1,6 +1,14 @@
 .equipment {
   & .templated__image {
-    max-height: 392px;
+    max-height: 300px;
     overflow: hidden;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .equipment {
+    & .templated__image {
+      max-height: 392px;
+    }
   }
 }
