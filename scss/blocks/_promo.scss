@@ -52,6 +52,8 @@
   .promo__image {
     position: absolute;
     max-width: 450px;
+    max-height: 675px;
+    overflow: hidden;
     bottom: 0;
     right: 0;
   }
