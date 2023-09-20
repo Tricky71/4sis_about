@@ -1,0 +1,136 @@
+.footer {
+  padding: 40px 0 30px;
+  background-color: $accent;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  & span {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  & b {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  & p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+}
+
+.footer__address-text {
+  font-size: 14px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.footer__contacts-tel {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+    &:hover {
+      color: #777;
+      text-decoration: none;
+    }
+    &:active {
+      color: #333;
+      text-decoration: none;
+    }
+}
+
+.footer__contacts-email {
+  text-decoration: none;
+    &:hover {
+      color: #333;
+      text-decoration: none;
+    }
+    &:active {
+      color: #333;
+      text-decoration: none;
+    }
+}
+
+.footer__social {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__social-link {
+  position: relative;
+  padding-left: 25px;
+  text-decoration: none;
+  
+    &:hover {
+      color: #333;
+      text-decoration: none;
+    }
+    &:active {
+      color: #333;
+      text-decoration: none;
+    }
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 14px;
+    }
+    &--1 {
+      &::before {
+        content: url('../img/icons/vk.svg');
+      }
+    }
+    &--2 {
+      &::before {
+        content: url('../img/icons/insta.svg');
+      }
+    }
+    &--3 {
+      &::before {
+        content: url('../img/icons/tg.svg');
+      }
+    }
+    &--4 {
+      &::before {
+        content: url('../img/icons/dzen.svg');
+      }
+    }
+}
+
+@media(min-width: $desktop-width) {
+  .footer {
+    padding: 50px 0 15px;
+  }
+
+  .footer__copyright {
+    padding-left: 30px;
+      & span {
+        margin-bottom: 35px;
+        letter-spacing: 0.7px;
+      }
+  }
+
+  .footer__address {
+    padding-left: 25px;
+    letter-spacing: 1.2px;
+  }
+
+  .footer__contacts {
+    padding-left: 27px;
+  }
+
+  .footer__contacts-tel {
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+}
