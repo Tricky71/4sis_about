@@ -2,5 +2,8 @@
   & .templated__image {
     max-height: 392px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

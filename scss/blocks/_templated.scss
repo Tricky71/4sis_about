@@ -118,12 +118,8 @@
   }
 
   .templated__info {
-    // position: absolute;
-    // padding-left:  150px;
     max-width: 805px;
-    // top: 0;
     right: -40px;
-    // z-index: -1;
   }
 
   .templated__title {
@@ -137,10 +133,8 @@
 
   .templated__image {
     max-width: 625px;
-    // z-index: 100;
-  }
-
-  .templated__img {
-    // z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -1,0 +1,130 @@
+.samples-promo {
+  margin-bottom: 50px;
+  & h2 {
+    font-size: 24px;
+    color :#000;
+  }
+  & .promo__content {
+    padding: 0;
+    margin: 0;
+    &--top {
+      padding: 0;
+      padding: 20px 0;
+      margin-bottom: 15px;
+    }
+    &--bottom {
+      margin-bottom: 15px;
+      & p { 
+        font-size: 16px;
+        color: #000;
+      }
+    }
+  }
+  & .promo__title {
+    margin: 0;
+  }
+}
+
+.samples-category {
+  margin-bottom: 50px;
+}
+
+@media(min-width: $tablet-width) {
+  .samples-promo {
+    margin-bottom: 190px;
+    & h2 {
+      font-size: 24px;
+      line-height: 42px;
+    }
+    & .promo__content {
+    padding: 0;
+    margin: 0;
+    &--top {
+      padding: 0;
+      padding: 20px 0;
+      margin-bottom: 35px;
+    }
+    &--bottom {
+      margin-bottom: 35px;
+      & p { 
+        font-size: 16px;
+      }
+    }
+    }
+    & .promo__title {
+      margin: 0;
+    }
+    & .promo__image {
+      max-height: 260px;
+    }
+  }
+
+  .samples-category {
+    margin-bottom: 180px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .samples-promo {
+    & h2 {
+      font-size: 36px;
+      line-height: 42px;
+    }
+    & .promo__content {
+      padding: 0;
+      margin: 0;
+    &--top {
+      padding: 0;
+      padding: 40px 0;
+      margin-bottom: 35px;
+    }
+    &--bottom {
+      margin-bottom: 94px;
+      & p { 
+        font-size: 24px;
+      }
+    }
+  }
+    & .promo__title {
+      margin: 0;
+    }
+    & .promo__image {
+      max-height: 360px;
+      overflow: hidden;
+    }
+  }
+  .samples-category {
+    &--chairs {
+      margin-bottom: 330px;
+    }
+    &--alum {
+      margin-bottom: 245px;
+        & .info-block {
+          padding-left: 0;
+        }
+        & .templated-wide__image {
+          left: 52%;
+          transform: translateY(-51%);
+        }
+    }
+    &--tables {
+      margin-bottom: 295px;
+      background-color: #000;
+      & .templated-wide__container {
+        & .templated-wide__image {
+          left: 3.6%;
+        }
+      }
+    }
+    &--sofas {
+      margin-bottom: 290px;
+      & .info-block {
+          padding: 50px 20px 55px 0px;
+        }
+        & .templated-wide__image {
+          left: 52%;
+          transform: translateY(-46%);
+        }
+    }
+  }
+}

@@ -1,7 +1,4 @@
 .menu-toggle {
-  // position: absolute;
-  // top: 40px;
-  // right: 0;
   background-color: transparent;
   min-height: 16px;
   width: 20px;
@@ -47,14 +44,12 @@
 }
 
 .menu-toggle--active .menu-toggle__inlay {
-  // background-color: $accent;
   transform: rotate(45deg);
 }
 
 .menu-toggle--active .menu-toggle__inlay::after {
   bottom: 0;
   transform: rotate(90deg);
-  // background-color: $accent;
 }
 
 @media(min-width: $tablet-width) {
