@@ -58,16 +58,18 @@ a {
 
 .button {
   display: inline-block;
+  // max-width: 163px;
   border: none;
   color: #fff;
   text-decoration: none;
-  // background-color: $accent;
-  padding: 15px 45px;
-  font-size: 13px;
+  background: #333;
+  padding: 10px 32px;
+  font-size: 14px;
   text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 3px;
-  border-radius: 2px;
+  box-shadow: 0px 0px 10px 0px rgba(154, 148, 148, 0.50);
+  font-weight: 400;
+  letter-spacing: 1.7px;
+  border-radius: 3px;
   text-align: center;
   position: relative;
   outline: none;
@@ -89,7 +91,8 @@ a {
   &:focus,
   &:hover {
     text-decoration: none;
-    color: #fff;
+    // color: #fff;
+    background-color: #777;
   }
   &:hover {
     // background-color: lighten($accent, 5%);

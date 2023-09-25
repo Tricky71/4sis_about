@@ -1,14 +1,6 @@
 .production {
   & .templated__image {
-    max-height: 300px;
-    overflow: hidden;
+    max-height: 392px;
   }
 }
 
-@media(min-width: $desktop-width) {
-  .production {
-    & .templated__image {
-      max-height: 392px;
-    }
-  }
-}

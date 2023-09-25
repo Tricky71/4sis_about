@@ -40,6 +40,14 @@
     }
 }
 
+.templated__image {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+
 .templated__image--1 {
   margin-bottom: 20px;
 }
