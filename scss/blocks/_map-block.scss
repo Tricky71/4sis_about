@@ -34,12 +34,13 @@
     z-index: 100;
     background: linear-gradient(90deg, #F9F9F9 78.93%, transparent), no-repeat;
       & .address-block {
+        padding-left: 10px;
         margin-bottom: 90px;
           &:last-child {
             margin-bottom: 0;
           }
           & p {
-          max-width: 340px;
+          max-width: 320px;
           }
       }
   }
