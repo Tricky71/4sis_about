@@ -5,9 +5,9 @@
   padding: 0;
   cursor: pointer;
     &:hover .menu-toggle__inlay {
-      background-color: $accent;
+      background-color: #000;
       &::before, &::after {
-        background-color: $accent;
+        background-color: #000;
       }
     }
 }
