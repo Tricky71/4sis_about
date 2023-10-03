@@ -58,7 +58,6 @@ a {
 
 .button {
   display: inline-block;
-  // max-width: 163px;
   border: none;
   color: #fff;
   text-decoration: none;
@@ -82,7 +81,6 @@ a {
     height: 4px;
     bottom: 0;
     width: 100%;
-    // background-color: darken($accent, 50%);
     opacity: .18;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
@@ -91,17 +89,14 @@ a {
   &:focus,
   &:hover {
     text-decoration: none;
-    // color: #fff;
     background-color: #777;
   }
   &:hover {
-    // background-color: lighten($accent, 5%);
     &::after {
       opacity: .22;
     }
   }
   &:active {
-    // background-color: darken($accent, 5%);
     &::after {
       opacity: .32;
     }
