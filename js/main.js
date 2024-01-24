@@ -85,7 +85,7 @@ const googleTranslateConfig = {
 
 	/* Если скрипт не работает или работает неправильно, раскомментируйте и укажите основной домен в свойстве domain */
 	/* If the script does not work or does not work correctly, uncomment and specify the main domain in the domain property */
-	domain: "tricky71.github.io/4sis_about"
+	// domain: "tricky71.github.io/4sis_about"
 
 };
 
