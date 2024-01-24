@@ -61,6 +61,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+let countryCode = geoplugin_countryCode();
+// const countryCode = 'en';
+
+let ruCode = 'RU';
+
+if (countryCode == ruCode) {
+	countryCode = 'ru';
+} else {
+	countryCode = 'en';
+}
+
 /*!***************************************************
  * google-translate.js v1.0.6
  * https://Get-Web.Site/
@@ -73,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const googleTranslateConfig = {
 	/* Original language */
-	lang: "ru",
+	lang: 'ru',
 
 	/* Если хотите подписаться на событие "FinishTranslate" (Момент когда скрипт закончил перевод), расскоментируйте и добавьте любое проверочное слово на оригинальном языке */
 	/* If you want to subscribe to the "FinishTranslate" event (The moment when the script finished translating), uncomment and add any test word in the original language */
@@ -81,7 +92,7 @@ const googleTranslateConfig = {
 
 	/* The language we translate into on the first visit*/
 	/* Язык, на который переводим при первом посещении */
-	// langFirstVisit: 'ru',
+	langFirstVisit: countryCode,
 
 	/* Если скрипт не работает или работает неправильно, раскомментируйте и укажите основной домен в свойстве domain */
 	/* If the script does not work or does not work correctly, uncomment and specify the main domain in the domain property */
@@ -221,6 +232,10 @@ function TranslateMutationObserver(word, isOrigin) {
 		});
 	}
 }
+
+console.log(geoplugin_city());
+console.log(geoplugin_countryCode());
+console.log(countryCode);
 
 
 
