@@ -61,6 +61,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+// console.log(geoplugin_city());
+// console.log(geoplugin_countryCode());
+
 let countryCode = geoplugin_countryCode();
 // const countryCode = 'en';
 
@@ -92,7 +95,7 @@ const googleTranslateConfig = {
 
 	/* The language we translate into on the first visit*/
 	/* Язык, на который переводим при первом посещении */
-	langFirstVisit: countryCode,
+	// langFirstVisit: countryCode,
 
 	/* Если скрипт не работает или работает неправильно, раскомментируйте и укажите основной домен в свойстве domain */
 	/* If the script does not work or does not work correctly, uncomment and specify the main domain in the domain property */
